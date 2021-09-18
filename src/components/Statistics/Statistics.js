@@ -6,16 +6,16 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <>
     {total ? (
       <ul className={styles.List}>
-        <li className={styles.Item}>Good:{good}</li>
-        <li className={styles.Item}>Neutral:{neutral}</li>
-        <li className={styles.Item}>Bad:{bad}</li>
-        <li className={styles.Item}>Total:{total}</li>
+        <li className={styles.Item}>Добре:{good}</li>
+        <li className={styles.Item}>Нейтрально:{neutral}</li>
+        <li className={styles.Item}>Погано:{bad}</li>
+        <li className={styles.Item}>Всього:{total}</li>
         <li className={styles.Item}>
-          Positive feedback: {positivePercentage}%
+          Позитивних відгуків: {positivePercentage}%
         </li>
       </ul>
     ) : (
-      <Notification message="No feedback given" />
+      <Notification message="Відгуків не надано" />
     )}
   </>
 );

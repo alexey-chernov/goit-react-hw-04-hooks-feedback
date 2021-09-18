@@ -15,13 +15,13 @@ function App() {
     const { feedback } = target.dataset;
 
     switch (feedback) {
-      case 'good':
+      case 'Добре':
         setGood(prevGood => prevGood + 1);
         break;
-      case 'neutral':
+      case 'Нейтрально':
         setNeutral(prevNeutral => prevNeutral + 1);
         break;
-      case 'bad':
+      case 'Погано':
         setBad(prevBad => prevBad + 1);
         break;
       default:
@@ -39,13 +39,13 @@ function App() {
 
   return (
     <Container>
-      <Section title="Please leave feedback">
+      <Section title="Будь-ласка залиште відгук">
         <FeedbackOptions
           options={FEEDBACK_OPTIONS}
           onLeaveFeedback={handleFeedback}
         />
       </Section>
-      <Section title="Statistics">
+      <Section title="Статистика">
         <Statistics
           good={good}
           neutral={neutral}
