@@ -1,0 +1,20 @@
+.Section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 2px solid rgba(189, 171, 69, 0.726);
+  border-radius: 8px;
+  color: rgba(255, 99, 71, 0.623);
+}
+
+.Section:first-child {
+  margin-bottom: 15px;
+}
+
+.Title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+}

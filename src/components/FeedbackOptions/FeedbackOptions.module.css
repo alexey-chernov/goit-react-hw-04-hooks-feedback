@@ -1,0 +1,32 @@
+.Button {
+  padding: 5px 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(124, 124, 124, 0.76);
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.Button:nth-child(3n) {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Button:hover {
+  color: white;
+  transform: scale(1.1);
+  background-color: rgb(215, 181, 89);
+}
+.Button:nth-child(2):hover {
+  background-color: rgb(11, 202, 59);
+}
+.Button:last-child:hover {
+  background-color: rgb(255, 0, 0);
+}
